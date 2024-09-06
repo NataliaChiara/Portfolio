@@ -1,8 +1,13 @@
+'use client'
 import Image from "next/image";
 import s from "./page.module.css";
-import { Work } from "@/components";
+import cs from 'classnames'
+import { useState } from "react";
 
 export default function Home() {
+
+  const [isLight, setIsLight] = useState(false)
+
   const logos = [
     '/images/js.png',
     '/images/ts.png',
@@ -21,10 +26,10 @@ export default function Home() {
 
   const works = [
     {
-      video: '/videos/facu-trainer-fit.mp4',
-      titulo: 'Facu Trainer Fit',
-      enlace: 'https://facutrainerfit.com.ar/',
-      descripcion: 'Landing page hecha en conjunto con un equipo de diseñadores y desarrolladores como proyecto final para el curso de React de Coderhouse.',
+      video: '/videos/cinemark-hoyts-clon.mp4',
+      titulo: 'Cinemark-Hoyts Clon',
+      enlace: 'https://cinemark-hoyts-clon.vercel.app/',
+      descripcion: 'Clon de la web de Cinemark-Hoyts',
       tecnologias: [
         '/images/ts.png',
         '/images/react.png'
@@ -43,8 +48,10 @@ export default function Home() {
   ]
 
   return (
-    <div className={s.page}>
+    <div className={isLight ? s.light_page : s.page}>
+      <button className={s.change_mode_btn} onClick={() => setIsLight(!isLight)}>{isLight? 'dark':'light'}</button>
       <main className={s.main}>
+        
         <div className={s.main__section}>
           <div className={s.main__section__content}>
             <div>
@@ -59,13 +66,34 @@ export default function Home() {
             <Image src='/images/perfil.png' alt="profile-picture" width={300} height={300}/>
           </div>
         </div>
-        {works.map((data, index) => (
-          <Work key={index} data={data} isReverse={index % 2 === 0}/>
-        ))}
+
+        {works.map((data, index) => {
+          const { video, titulo, enlace, descripcion, tecnologias } = data
+          return (
+            <div key={index} className={s.main__section}>
+              <div className={cs(s.main__section__container, {[s.main__section__container__is_reverse] : index % 2 === 0})}>
+                <video autoPlay loop muted className={s.main__section__container__video}>
+                  <source src={video} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                <div className={s.main__section__container__info}>
+                  <h1><a href={enlace}><Image src='/images/link.png' width={20} height={20} alt='link-icon'/>{titulo}</a></h1>
+                  <p>{descripcion}</p>
+                  <div className={s.main__section__container__info__logos}>
+                    {tecnologias.map((url) => (
+                      <Image className={s.main__section__container__info__logos__img} src={url} key={url} alt="technology-icon" width={30} height={30}/>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          )
+        })}
+
         <div className={s.main__section}>
           experiencia profesional / marcas
         </div>
-
+        
         <div className={s.main__section}>
           <div className={s.main__section__content}>
             <span className={s.main__section__content__top}><p>Top<br/>10</p></span>
