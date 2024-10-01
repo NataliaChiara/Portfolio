@@ -4,7 +4,7 @@ import s from "./page.module.css";
 import cs from 'classnames'
 import { useState } from "react";
 import { ReactSVG } from "react-svg";
-import { sendGAEvent } from "@next/third-parties/google";
+import { sendGAEvent, sendGTMEvent } from "@next/third-parties/google";
 
 export default function Home() {
 
@@ -72,6 +72,10 @@ export default function Home() {
     sendGAEvent('event', 'clic_boton', {
       'is_light': isLight,
     });
+    sendGTMEvent({
+      event: 'clic_boton',
+      is_light: isLight
+    })
   }
 
   return (
