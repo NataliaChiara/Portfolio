@@ -4,6 +4,7 @@ import s from "./page.module.css";
 import cs from 'classnames'
 import { useState } from "react";
 import { ReactSVG } from "react-svg";
+import { sendGAEvent } from "@next/third-parties/google";
 
 export default function Home() {
 
@@ -66,10 +67,17 @@ export default function Home() {
     }
   ]
 
+  function handleClickLight () {
+    setIsLight(!isLight)
+    sendGAEvent('event', 'clic_boton', {
+      'is_light': isLight,
+    });
+  }
+
   return (
     <div className={isLight ? s.light_page : s.page}>
       <header className={s.header}>
-        <button onClick={() => setIsLight(!isLight)}>{isLight? 'dark':'light'}</button>
+        <button onClick={handleClickLight}>{isLight? 'dark':'light'}</button>
         <button>change language</button>
       </header>
       <main className={s.main}>
