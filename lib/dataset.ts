@@ -73,5 +73,14 @@ export const dataset = {
       ],
       video: '/videos/mixx-bunker.mp4'
     }
+  ],
+  clients: [
+    '/images/clients/at&t.png', '/images/clients/axe.jpg', '/images/clients/bacardi.png',
+    '/images/clients/bps.png', '/images/clients/britbox.png', '/images/clients/cerave.webp',
+    '/images/clients/cornetto.png', '/images/clients/levis.png', '/images/clients/max.png',
+    '/images/clients/mercado-libre.png', '/images/clients/popular.png',
+    '/images/clients/samsung.png', '/images/clients/smirnoff.png',
+    '/images/clients/Spotify.png', '/images/clients/trident.png'
   ]
 }
+
