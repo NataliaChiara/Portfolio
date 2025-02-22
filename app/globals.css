@@ -31,3 +31,11 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+.swiper-button-prev::after, .swiper-button-next::after {
+  color: white;
+}
+
+.swiper-pagination-bullet-active {
+  background: white !important;
+}

@@ -1,0 +1,35 @@
+.slide {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--violet);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.video {
+  width: 600;
+  height: 400px;
+}
+
+.texts {
+  height: 400px;
+  padding-top: 30px;
+  max-width: 350px;
+
+  & h3 {
+    font-size: var(--title);
+    color: var(--yellow);
+  }
+
+  & h4 {
+    font-size: var(--subtitle);
+  }
+
+  & ul {
+    margin-top: 20px;
+    font-size: var(--text);
+    list-style: none;
+  }
+}
