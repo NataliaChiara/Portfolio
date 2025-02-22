@@ -1,11 +1,11 @@
 export const dataset = {
   services: [
     {
-      slug: 'fullstack-developer',
-      title: 'Fullstack Developer',
+      slug: 'frontend-developer',
+      title: 'Frontend Developer',
       list: [
         'Desarrollo de webs responsive.',
-        'Implementacion e integracion de APIs RESTful',
+        'Integracion de APIs RESTful',
         'Mantenimiento de codigo.'
       ]
     },
