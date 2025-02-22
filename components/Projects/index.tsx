@@ -11,6 +11,7 @@ import s from './Projects.module.css'
 const Projects = () => {
   return (
     <Swiper
+    className={s.swiper}
       modules={[Navigation, Pagination]}
       navigation
       pagination={{ clickable: true }}

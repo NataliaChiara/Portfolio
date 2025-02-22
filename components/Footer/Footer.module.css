@@ -1,6 +1,7 @@
 .container {
-  background-image: url('/images/bg-footer.png');
-  aspect-ratio: 1366 / 186;
+  background-image: url('/images/bg-footer-mob.png');
+  aspect-ratio: 414 / 245;
+  background-size: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -8,5 +9,11 @@
   & a:hover {
     transition: all 0.2s;
     scale: 1.05;
+  }
+
+  @media(min-width: 800px){
+  background-image: url('/images/bg-footer.png');
+  aspect-ratio: 1366 / 186;
+
   }
 }
