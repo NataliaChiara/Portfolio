@@ -1,0 +1,44 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--light-pink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+}
+
+.card_bg {
+  width: 280px;
+  height: 400px;
+  background-color: var(--yellow);
+  border: 2px solid black;
+  border-radius: 15px;
+  position: relative;
+}
+
+.card {
+  width: 280px;
+  height: 400px;
+  padding: 30px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 15px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+
+  & h3 {
+    width: fit-content;
+    background-color: var(--turquoise);
+    font-size: var(--subtitle);
+    margin-bottom: 30px;
+  }
+
+  & p {
+    font-size: var(--text);
+    border-bottom: 1px dashed var(--orange);
+    margin-bottom: 5px;
+  }
+}
+

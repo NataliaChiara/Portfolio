@@ -4,7 +4,11 @@
   --violet: #8c52ff;
   --turquoise: #5ce1e6;
   --yellow: #ffed00;
-  --orange: #ff914d
+  --orange: #ff914d;
+
+  --title: 56px;
+  --subtitle: 32px;
+  --text: 22px;
 }
 
 html,

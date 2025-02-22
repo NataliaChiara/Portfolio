@@ -25,7 +25,7 @@
 
   & h2 {
     font-family: var(--f-futura-bold);
-    font-size: 56px;
+    font-size: var(--title);
     background-color: var(--pink);
     padding: 5px 15px;
   }
@@ -33,6 +33,7 @@
   & h1 {
     background-color: var(--yellow);
     padding: 5px 15px;
+    font-size: var(--subtitle);
   }
 }
 
@@ -42,6 +43,6 @@
   gap: 5px;
 
   & span {
-    font-size: 22px;
+    font-size: var(--text);
   }
 }
