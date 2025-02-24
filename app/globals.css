@@ -32,8 +32,22 @@ a {
   text-decoration: none;
 }
 
-.swiper-button-prev::after, .swiper-button-next::after {
+.swiper-button-prev,
+.swiper-button-next {
+  top: 75% !important;
+
+  @media (min-width: 800px) {
+    top: var(--swiper-navigation-top-offset, 50%) !important;
+  }
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
   color: white;
+}
+
+.swiper-pagination {
+  bottom: 20px !important;
 }
 
 .swiper-pagination-bullet-active {

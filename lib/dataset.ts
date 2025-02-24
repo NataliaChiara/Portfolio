@@ -25,53 +25,59 @@ export const dataset = {
       title: 'AXE',
       subtitle: 'Black Remixed',
       tecnhologies: [
-        'Nexs Js', 'Typescript'
+        'Next Js', 'Typescript'
       ],
-      video: '/videos/axe.mp4'
+      video: {
+        desktop: '/videos/axe.mp4',
+        mobile: '/videos/axe-mobile.mp4'
+      }
     },
     {
       slug: 'bacardi',
       title: 'BACARDI',
       subtitle: '¿Que festival de musica es el ideal para ti?',
       tecnhologies: [
-        'Nexs Js', 'Typescript'
+        'Next Js', 'Typescript'
       ],
-      video: '/videos/bacardi.mp4'
+      video: {
+        desktop: '/videos/bacardi.mp4',
+        mobile: '/videos/bacardi-mobile.mp4'
+      }
     },
     {
       slug: 'cornetto',
       title: 'CORNETTO',
       subtitle: '¿A que suena tu Cornetto Spotify?',
       tecnhologies: [
-        'Nexs Js', 'Typescript'
+        'Next Js', 'Typescript'
       ],
-      video: '/videos/cornetto.mp4'
+      video: {
+        desktop: '/videos/cornetto.mp4',
+        mobile: '/videos/cornetto-mobile.mp4'
+      }
     },
     {
       slug: 'jhonnie-walker',
       title: 'JHONNIE WALKER',
       subtitle: 'Blonde hecho para mezclarse',
       tecnhologies: [
-        'Nexs Js', 'Typescript'
+        'Next Js', 'Typescript'
       ],
-      video: '/videos/jhonnie-walker.mp4'
+      video: {
+        desktop: '/videos/jhonnie-walker.mp4',
+        mobile: '/videos/jhonnie-walker-mobile.mp4'
+      }
     },    {
       slug: 'max',
       title: 'MAX',
       subtitle: 'Cuéntanos lo que escuchas y te diremos qué ver',
       tecnhologies: [
-        'Nexs Js', 'Typescript'
+        'Next Js', 'Typescript'
       ],
-      video: '/videos/max.mp4'
-    },
-    {
-      slug: 'mixx-bunker',
-      title: 'MIXX BUNKER',
-      subtitle: 'Conecta con tus artistas y generos mas escuchados',
-      tecnhologies: [
-        'Nexs Js', 'Typescript'
-      ],
-      video: '/videos/mixx-bunker.mp4'
+      video: {
+        desktop: '/videos/max.mp4',
+        mobile: '/videos/max-mobile.mp4'
+      }
     }
   ],
   clients: [

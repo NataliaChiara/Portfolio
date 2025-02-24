@@ -19,9 +19,7 @@
 }
 
 .video {
-  width: 300;
-  height: 200px;
-
+  width: 270px;
   @media (min-width: 800px) {
     width: 600;
     height: 400px;
@@ -30,7 +28,7 @@
 
 .texts {
   padding-top: 20px;
-  width: 300px;
+  width: 270px;
   color: white;
 
   @media (min-width: 800px) {
@@ -40,8 +38,12 @@
   }
 
   & h3 {
-    font-size: var(--title);
+    font-size: var(--subtitle);
     color: var(--yellow);
+
+    @media (min-width: 800px) {
+      font-size: var(--title);
+    }
   }
 
   & h4 {
