@@ -10,7 +10,7 @@
 .container__info {
   background-color: white;
   height: 360px;
-  border: 2px solid var(--violet);
+  border: 2px solid var(--turquoise);
   border-radius: 15px;
   display: flex;
   gap: 30px;

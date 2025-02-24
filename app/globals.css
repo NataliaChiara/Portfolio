@@ -34,7 +34,12 @@ a {
 
 .swiper-button-prev,
 .swiper-button-next {
-  top: 75% !important;
+  top: 35% !important;
+  background-color: white;
+  width: 50px !important;
+  height: 50px!important;
+  border-radius: 100%;
+  border: 2px solid black;
 
   @media (min-width: 800px) {
     top: var(--swiper-navigation-top-offset, 50%) !important;
@@ -43,7 +48,9 @@ a {
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
-  color: white;
+  color: black;
+  font-size: 24px !important;
+
 }
 
 .swiper-pagination {
