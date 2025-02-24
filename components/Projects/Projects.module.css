@@ -21,7 +21,7 @@
 .video {
   width: 270px;
   @media (min-width: 800px) {
-    width: 600;
+    width: 600px;
     height: 400px;
   }
 }

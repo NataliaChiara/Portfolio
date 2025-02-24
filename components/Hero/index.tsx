@@ -15,7 +15,7 @@ const Hero = () => {
             <span>Buenos Aires, Argentina</span>
           </div>
         </div>
-        <Image src='/images/perfil.png' alt='Avatar' width={300} height={300} />
+        <Image className={s.profile} src='/images/perfil.png' alt='Avatar' width={300} height={300} />
       </div>
     </div>
   );

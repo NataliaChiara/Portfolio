@@ -1,7 +1,7 @@
 .container {
   width: 100vw;
   height: 100vh;
-  background-image: url('/images/bg-hero.png');
+  background-image: url("/images/bg-hero.png");
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,12 +9,20 @@
 
 .container__info {
   background-color: white;
-  height: 360px;
   border: 2px solid var(--turquoise);
   border-radius: 15px;
   display: flex;
-  gap: 30px;
+  flex-direction: column-reverse;
   padding: 30px;
+  width: 300px;
+
+  @media (min-width: 800px) {
+    flex-direction: row;
+    height: 360px;
+    width: auto;
+  gap: 30px;
+
+  }
 }
 
 .container__info__texts {
@@ -25,15 +33,25 @@
 
   & h2 {
     font-family: var(--f-futura-bold);
-    font-size: var(--title);
+    font-size: var(--subtitle);
     background-color: var(--pink);
     padding: 5px 15px;
+
+    @media (min-width: 800px) {
+      font-size: var(--title);
+    }
   }
 
   & h1 {
     background-color: var(--yellow);
     padding: 5px 15px;
-    font-size: var(--subtitle);
+    font-size: var(--text);
+    margin-bottom: 15px;
+
+    @media (min-width: 800px) {
+      font-size: var(--subtitle);
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -44,5 +62,15 @@
 
   & span {
     font-size: var(--text);
+  }
+}
+
+.profile {
+  width: 250px;
+  height: 250px;
+
+  @media(min-width: 800px) {
+    width: auto;
+    height: auto;
   }
 }
